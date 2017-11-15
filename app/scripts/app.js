@@ -46,6 +46,11 @@ angular
         controller: 'swasthyaCtrl',
         controllerAs: 'swasthyaCtrl'
       })
+      .when('/reports', {
+        templateUrl: 'views/reports.html',
+        controller: 'reportsCtrl',
+        controllerAs: 'reportsCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

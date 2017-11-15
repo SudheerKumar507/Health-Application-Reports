@@ -1,3 +1,19 @@
+.navbar{
+  width: 1359px;
+  height: 75px;
+  margin-bottom: 0px;
+}
+.breadcrumb{
+width: 1359px;
+height: 46px;
+background-color: #f75740;
+padding-top: 13px;
+padding-bottom: 0px;
+padding-right: 0px;
+padding-left: 0px;
+margin-bottom: 2px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -16,7 +32,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.card-block{
+   height: 100px;
+}
+.card{
+  color: black;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -47,6 +68,8 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0px;
+  width: 1359px;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -66,7 +89,7 @@ body {
   .container {
     max-width: 730px;
   }
-
+}
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -198,71 +221,3 @@ border-top-right-radius: 10px;*/
   color: black;
 }
 
-
-
-/*@media only screen and (max-width: 500px) {
-  .bqv,
-  .bqy,
-  .bqw,
-  .bqx {
-      margin-bottom: 10px !important;
-  }
-}*/
-}
-
-
-
-
-
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 30%;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,.signupbtn {
-  float: left;
-  width: 20%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 50px) {
-  .cancelbtn, .signupbtn {
-     width: 50%;
-  }
-}

@@ -30,11 +30,13 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
-      }).when('/session-report', {
+      })
+      .when('/session-report', {
         templateUrl: 'views/session-report.html',
         controller: 'Session-ReportCtrl',
         controllerAs: 'session-report'
-      }).when('/viewer-report', {
+      })
+      .when('/viewer-report', {
         templateUrl: 'views/viewer-report.html',
         controller: 'Viewer-ReportCtrl',
         controllerAs: 'viewer-report'

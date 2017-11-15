@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name healthApplicationApp.controller:Session-ReportCtrl
+ * @name healthApplicationApp.controller:swasthyaSaasthi
  * @description
- * # Session-ReportCtrl
+ * # Viewer-ReportCtrl
  * Controller of the healthApplicationApp
  */
 angular.module('healthApplicationApp')
-  .controller('Session-ReportCtrl', function () {
+  .controller('swasthyaCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

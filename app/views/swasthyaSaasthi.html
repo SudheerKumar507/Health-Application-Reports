@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Swasthya saasthiReport Report</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-        crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-    <style>
-    </style>
-</head>
-
-<body>
+<div>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <img src="../images/First_1000_days.png" class="img-fluid" height="100px" width="100px">
+            <img src="../images/First_1000_days.png" class="img-fluid" height="10px" width="100px">
         </a>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav mr-auto"></ul>
@@ -39,7 +20,7 @@
             </ul>
         </div>
     </nav>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-success">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-success" style="height : 10px">
         <ul class="navbar-nav mr-auto">
             <h4 class="text-primary">Swasthya shatti's Report</h4>
         </ul>
@@ -108,6 +89,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -124,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -139,66 +121,90 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <div class="row">
-                                <label for="exampleInputtext1" class="col-sm-4">To Date</label>
-                                <div class="col-sm-8">
-                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="col-sm-6">
+                <div class="col-sm-6">
                     <div class="form-group">
                         <div class="row">
-                            <label for="exampleInputtext1" class="col-sm-4 col-form-label">Export Pdf/Excelss</label>
+                            <label for="exampleInputtext1" class="col-sm-4">To Date</label>
                             <div class="col-sm-8">
-                                <select class="form-control" id="exampleSelect2">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                </select>
+                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <table class="table table-hover table-bordered">
-                    <thead>
-                        <tr>
-                        <th>S.No</th>
-                        <th>Adhaar</th>
-                        <th>Type</th>
-                        <th>No Of Videos</th>
-                        <th>Watch Duration</th>
-                        <th>Filter</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>811102116589</td>
-                        <td></td>
-                        <td>5</td>
-                        <td>15 Mints</td>
-                        <td></td>
-                    </tr>
 
-                </tbody>
-            </table>
             <div class="form-group">
                 <div class="row">
-                    <div class="col-sm-5"></div>
+
                     <div class="col-sm-4">
-                        <button type="submit" class="btn btn-primary">Save</button>
-                        <button type="button" class="btn btn-danger">Cancel</button>
+                        <button type="submit" class="btn btn-success">submit</button>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <select class="form-control" id="exampleSelect2">
+                                    <option>Export PDF</option>
+                                    <option>Export EXcel</option>
+                                    <option>Export Others</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="submit" class="btn btn-primary">Export</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="input-group col-md-4">
+                    <input class="form-control rounded-0 py-2" placeholder="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
-</body>
 
-</html>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Village</th>
+                    <th>SS Name</th>
+                    <th>SS Type</th>
+                    <th>Number of viewers Registered</th>
+                    <th>Number of unique viewers who watched videos</th>
+                    <th>Number of session conducted</th>
+                    <th>Number of hours of learning facilitated</th>
+                    <th>Average Effectiveness Rating</th>
+                    <th>Number of Viewers who watched more than 50% of the videos</th>
+                    <th>Number of viewers who watched all the videos</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>kothapeta</td>
+                    <td>Sudheer</td>
+                    <td>others</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>55</td>
+                    <td>67</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

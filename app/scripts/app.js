@@ -26,6 +26,12 @@ angular
         controller: 'HomeCtrl',
         controllerAs: 'home'
       })
+      .when('/session-reports',{
+        templateUrl: 'views/session-report.html'
+      })
+      .when('/viewer-reports',{
+        templateUrl: 'views/viewer-report.html'
+      })
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',

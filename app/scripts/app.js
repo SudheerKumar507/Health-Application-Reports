@@ -33,8 +33,8 @@ angular
       })
       .when('/reports', {
         templateUrl: 'views/reports.html',
-        controller: 'ReportsCtrl',
-        controllerAs: 'reports'
+        controller: 'allReportsCtrl',
+        controllerAs: 'allReportsCtrl'
       })
       .otherwise({
         redirectTo: '/'

@@ -25,27 +25,21 @@ angular
         templateUrl: 'views/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'home'
-      })
-      .when('/session-reports',{
-        templateUrl: 'views/session-report.html'
-      })
-      .when('/viewer-reports',{
-        templateUrl: 'views/viewer-report.html'
-      })
+      })         
       .when('/about', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/swasthya saasthi', {
-        templateUrl: 'views/swasthya saasthi.html',
-        controller: 'Swasthya saasthiCtrl',
-        controllerAs: 'swasthya saasthi'
+      .when('/sessionReport', {
+        templateUrl: 'views/session-report.html',
+        controller: 'Session-ReportCtrl',
+        controllerAs: 'session-report'
       })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl',
-        controllerAs: 'login'
+      .when('/viewerReport', {
+        templateUrl: 'views/viewer-report.html',
+        controller: 'Viewer-ReportCtrl',
+        controllerAs: 'viewer-report'
       })
       .otherwise({
         redirectTo: '/'

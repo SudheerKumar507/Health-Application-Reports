@@ -1,6 +1,19 @@
-li {
-    list-style: none;
+.navbar{
+  width: 1359px;
+  height: 75px;
+  margin-bottom: 0px;
 }
+.breadcrumb{
+width: 1359px;
+height: 46px;
+background-color: #f75740;
+padding-top: 13px;
+padding-bottom: 0px;
+padding-right: 0px;
+padding-left: 0px;
+margin-bottom: 2px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -19,7 +32,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.card-block{
+   height: 100px;
+}
+.card{
+  color: black;
+}
 /* Custom page header */
 .header {
   border-bottom: 1px solid #e5e5e5;
@@ -32,6 +50,8 @@ body {
   line-height: 40px;
   padding-bottom: 19px;
 }
+
+
 
 /* Custom page footer */
 .footer {
@@ -48,6 +68,8 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0px;
+  width: 1359px;
 }
 .jumbotron .btn {
   font-size: 24px;
@@ -67,7 +89,7 @@ body {
   .container {
     max-width: 730px;
   }
-
+}
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -199,14 +221,3 @@ border-top-right-radius: 10px;*/
   color: black;
 }
 
-
-
-/*@media only screen and (max-width: 500px) {
-  .bqv,
-  .bqy,
-  .bqw,
-  .bqx {
-      margin-bottom: 10px !important;
-  }
-}*/
-}

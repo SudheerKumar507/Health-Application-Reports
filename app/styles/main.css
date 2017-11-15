@@ -30,6 +30,8 @@ body {
   padding-bottom: 19px;
 }
 
+
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -206,4 +208,61 @@ border-top-right-radius: 10px;*/
       margin-bottom: 10px !important;
   }
 }*/
+}
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+  float: left;
+  width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 50px) {
+  .cancelbtn, .signupbtn {
+     width: 50%;
+  }
 }

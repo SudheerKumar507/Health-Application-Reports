@@ -1,75 +1,61 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name healthApplicationApp.controller:ViewerCtrl
- * @description
- * # ViewerCtrl
- * Controller of the healthApplicationApp
- */
 angular.module('healthApplicationApp')
-  //.controller('ViewerCtrl',['userService',function (userService, $scope) {
-  //.controller('ViewerCtrl', ['ViewerCtrl','$scope','userService', function($scope,userService) {
+
   .controller('ViewerCtrl', ViewerCtrl);
 
 ViewerCtrl.$inject = ['$rootScope', '$scope', '$http'];
 function ViewerCtrl($rootScope, $scope, $http) {
-  // this.awesomeThings = [
-  //   'HTML5 Boilerplate',
-  //   'AngularJS',
-  //   'Karma'
-  // ];
-  // $scope.stateInfo = function () {
-  //alert("sudheer")
-  // userservice.states().then(function(data){
-  //   console.log(data)
-  $scope.colors = [
-    {name:'black', shade:'dark'},
-    {name:'white', shade:'light', notAnOption: true},
-    {name:'red', shade:'dark'},
-    {name:'blue', shade:'dark', notAnOption: true},
-    {name:'yellow', shade:'light', notAnOption: false}
-  ];
-   $http.get('http://192.168.56.1:3001/districts').then(function (response) {
-    $scope.districts = response.data    
-  }, function (response) {
-    console.log(response)
-    alert("Error finding contacts.");
-  });
 
-$http.get('http://192.168.56.1:3001/states').then(function (response) {
-    $scope.states = response.data
-    
-  }, function (response) {
-    console.log(response)
-    alert("Error finding contacts.");
-  });
+  var baseURL = 'http://192.168.1.6:3000';
 
-  $http.get('http://192.168.1.6:3001/clusters').then(function (response) {
-    $scope.clusterData = response.data
-    
-  }, function (response) {
-    console.log(response)
-    alert("Error finding contacts.");
-  });
+  var getStates = function () {
+    $http.get(baseURL + '/states').then(function (response) {
+      $scope.states = response.data;
+      return;
+    }, function (err) {
+      console.log(err);
+    })
+  }();
 
-  $http.get('http://192.168.1.6:3001/villages').then(function (response) {
-    $scope.villageData = response.data
-    
-  }, function (response) {
-    console.log(response)
-    alert("Error finding contacts.");
-  });
+  $scope.getDistricts = function () {
+    var data = $scope.stateID;
+    $http.get(baseURL + '/district/', { params: { stateID: data } }).then(function (response) {
+      $scope.districts = response.data
+    }, function (err) {
+      console.log(err);
+    });
+  }
 
-  $http.get('http://192.168.1.6:3001/swasthyaSaathi').then(function (response) {
+
+
+  $scope.getClusters = function () {
+    var data = $scope.districtID;
+    $http.get(baseURL + '/cluster', { params: { districtID: data } }).then(function (response) {
+      $scope.clusterData = response.data
+
+    }, function (err) {
+      console.log(err);
+    })
+  }
+  $scope.getVillages = function () {
+    var data = $scope.clusterID;
+    $http.get(baseURL + '/village', { params: { clusterID: data } }).then(function (response) {
+      $scope.villageData = response.data
+
+    }, function (err) {
+      console.log(err);
+    });
+  }
+
+  $http.get('http://192.168.1.6:3000/swasthyaSaathi').then(function (response) {
     $scope.swasthyaData = response.data
-    
-  }, function (response) {
-    console.log(response)
-    alert("Error finding contacts.");
+
+  }, function (err) {
+    console.log(err);
   });
 
 
-  // }
+
 }
 

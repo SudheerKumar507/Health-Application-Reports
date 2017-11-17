@@ -23,43 +23,46 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select State :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="stateName" ng-options="state as state.name for state in states | orderBy:'state'">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="stateID" ng-options="state.stateID as state.name for state in states | orderBy:'state'" ng-click="getDistricts()">
                                             <option value="">Select State</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
-                                        <label for="">Select Cluster :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterName" ng-options="cluster as cluster.name for cluster in clusterData | orderBy:'cluster'">
-                                            <option value="">Select Cluster</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3">
-                                    <div class="form-group">
                                         <label for="">Select District :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="districtName" ng-options="district as district.name for district in districts | orderBy:'district'">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="districtID" ng-options="district.districtID as district.name for district in districts | orderBy:'district'" ng-click="getClusters()">
                                             <option value="">Select District</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-3">
-                                    <div class="form-group">
-                                        <label for="">Select Village :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageName" ng-options="village as village.name for village in villageData | orderBy:'state'">
-                                            <option value="">Select Village</option>
-                                        </select>
-                                    </div>
-                                </div>
 
-                            </div>
-                            <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Block :</label>
                                         <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="blockName" ng-options="state as state.name for state in states | orderBy:'state'">
                                             <option value="">Select Block</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="form-group">
+                                        <label for="">Select Cluster :</label>
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusterData | orderBy:'cluster'" ng-click="getVillages()">
+                                            <option value="">Select Cluster</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               
+                                
+
+                            </div>
+                            <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
+                                <div class="col-lg-3 col-md-3">
+                                    <div class="form-group">
+                                        <label for="">Select Village :</label>
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageName" ng-options="village as village.name for village in villageData | orderBy:'state'">
+                                            <option value="">Select Village</option>
                                         </select>
                                     </div>
                                 </div>

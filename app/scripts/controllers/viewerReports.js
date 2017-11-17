@@ -14,22 +14,7 @@ angular.module('healthApplicationApp')
 
 ViewerCtrl.$inject = ['$rootScope', '$scope', '$http'];
 function ViewerCtrl($rootScope, $scope, $http) {
-  // this.awesomeThings = [
-  //   'HTML5 Boilerplate',
-  //   'AngularJS',
-  //   'Karma'
-  // ];
-  // $scope.stateInfo = function () {
-  //alert("sudheer")
-  // userservice.states().then(function(data){
-  //   console.log(data)
-  $scope.colors = [
-    {name:'black', shade:'dark'},
-    {name:'white', shade:'light', notAnOption: true},
-    {name:'red', shade:'dark'},
-    {name:'blue', shade:'dark', notAnOption: true},
-    {name:'yellow', shade:'light', notAnOption: false}
-  ];
+ 
    $http.get('http://192.168.56.1:3001/districts').then(function (response) {
     $scope.districts = response.data    
   }, function (response) {

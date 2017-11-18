@@ -25,12 +25,12 @@
 				<div class="panel-body">
 					<div class="row">
 							<div class="col-sm-8">
-									<div class="card p-6 mt-5" style="  height: 445px;">
+									<div class="card p-6 mt-5" style="  height: 445px;" ng-repeat="data in dashboard">
 										<div class="row mt-2">
 											<div class="col-sm-6">
 												<div class="card card-inverse card-primary">
 													<div class="card-block">
-														<h2>62873</h2>
+														<h2>{{data.HoursLearning}}</h2>
 														<br>
 														<h3> Hours of Learning </h3>
 													</div>
@@ -39,7 +39,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-success">
 													<div class="card-block">
-														<h2>428738</h2>
+														<h2>{{data.PeopleEducated}}</h2>
 														<br>
 														<h3> People educated </h3>
 					
@@ -51,7 +51,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-info">
 													<div class="card-block">
-														<h2>3673829</h2>
+														<h2>{{data.VillagesImpact}}</h2>
 														<br>
 														<h3> Villages impacted </h3>
 					
@@ -62,7 +62,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-danger">
 													<div class="card-block">
-														<h2>4626337</h2>
+														<h2>{{data.ssTrained}}</h2>
 														<br>
 														<h3> Swaasthya Saathis trained </h3>
 					
@@ -74,7 +74,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-success">
 													<div class="card-block">
-														<h2>3567367</h2>
+														<h2>{{data.PR}}</h2>
 														<br>
 														<h3> Population Reach </h3>
 					
@@ -84,7 +84,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-warning">
 													<div class="card-block">
-														<h2>73248373</h2>
+														<h2>{{data.viewerReg}}</h2>
 														<br>
 														<h3> Viewers registered </h3>
 					
@@ -96,7 +96,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-danger">
 													<div class="card-block">
-														<h2>38373221</h2>
+														<h2>{{data.Preg}}</h2>
 														<br>
 														<h3> Pregnant women & Lactating mothers educated </h3>
 					
@@ -106,7 +106,7 @@
 											<div class="col-sm-6">
 												<div class="card card-inverse card-primary">
 													<div class="card-block">
-														<h2>363863</h2>
+														<h2>{{data.women}}</h2>
 														<br>
 														<h3>Women educated </h3>
 													</div>

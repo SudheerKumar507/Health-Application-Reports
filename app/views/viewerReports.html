@@ -48,7 +48,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Cluster :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusterData | orderBy:'cluster'" ng-click="getClusters()">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusters | orderBy:'cluster'" ng-click="getClusters()">
                                             <option value="">Select Cluster</option>
                                         </select>
                                     </div>
@@ -61,7 +61,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Village :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageID" ng-options="village.villageID as village.name for village in villageData | orderBy:'state'" ng-click="getVillages()">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageID" ng-options="village.villageID as village.name for village in villages | orderBy:'village'" ng-click="getVillages()">
                                             <option value="">Select Village</option>
                                         </select>
                                     </div>
@@ -70,7 +70,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Swaasthya Saathi :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="SwaasthyaName" ng-options="swasthy as swasthy.name for swasthy in swasthyaData | orderBy:'swasthy'">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="SSID" ng-options="swasthy.SSID as swasthy.name for swasthy in swasthyaData | orderBy:'swasthy'" ng-click="getswasthyaSaathi">
                                             <option value="">Select Swaasthya Saathi</option>
                                         </select>
                                     </div>

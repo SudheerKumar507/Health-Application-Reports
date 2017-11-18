@@ -8,7 +8,7 @@
  * Controller of the healthApplicationApp
  */
 angular.module('healthApplicationApp')
-  .controller('homeCtrl', function ($scope) {
+  .controller('homeCtrl', function ($scope, $location) {
     $scope.dashboard = [{
       "HoursLearning": "10",
       "PeopleEducated": "20",
@@ -20,5 +20,8 @@ angular.module('healthApplicationApp')
       "women": "5"
 
     }];
-    console.log($scope.dashboard)
+    
+    $scope.loginForm = function(){
+      $location.path('/login')
+    }
   });

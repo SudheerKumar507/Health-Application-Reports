@@ -10,6 +10,18 @@
 angular.module('healthApplicationApp')
   .controller('reportsCtrl', function ($location, $scope) {
 
+    $scope.dashboard = [{
+      "HoursLearning": "10",
+      "PeopleEducated": "20",
+      "VillagesImpact": "40",
+      "ssTrained": "10",
+      "PR": "40",
+      "viewerReg": "1",
+      "Preg": "5",
+      "women": "5"
+
+    }];
+
     $scope.viewerReports = function () {
       $location.path('/viewerReports');
     }

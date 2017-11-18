@@ -1,34 +1,20 @@
 <div>
   <div ng-include="'views/header.html'"></div>
-  <div id="navbar">
+  <div id="navbar" style="height:40px;background-color:#4e9f8a">
     <div class="container-fluid main_content">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-right" id="navbar1">
-          <li class="customer_heading text-center">
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
-  <h1 class="page-header">
-    <p class="text-center" style="color:green;">SESSION REPORTS</p>
-  </h1>
-  <div class="container-fluid main_content" style="margin-top: 35px;">
+
+  <div class="container-fluid">
     <!-- <div id="main"> -->
+
     <div>
       <div class="panel panel-primary">
+
         <div class="panel-body">
           <div class="row">
-            <form name="form2">
-              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
+            <form name="form">
+              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 20px">
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select State :</label>
@@ -47,6 +33,7 @@
                     </select>
                   </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select Block :</label>
@@ -59,31 +46,34 @@
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select Cluster :</label>
-                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusterData | orderBy:'cluster'"
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusters | orderBy:'cluster'"
                       ng-click="getClusters()">
                       <option value="">Select Cluster</option>
                     </select>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
+              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 40px">
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select Village :</label>
-                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageID" ng-options="village.villageID as village.name for village in villageData | orderBy:'state'"
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageID" ng-options="village.villageID as village.name for village in villages | orderBy:'village'"
                       ng-click="getVillages()">
                       <option value="">Select Village</option>
                     </select>
                   </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select Swaasthya Saathi :</label>
-                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="SwaasthyaName" ng-options="swasthy as swasthy.name for swasthy in swasthyaData | orderBy:'swasthy'">
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="SSID" ng-options="swasthy.SSID as swasthy.name for swasthy in swasthyaData | orderBy:'swasthy'"
+                      ng-click="getswasthyaSaathi">
                       <option value="">Select Swaasthya Saathi</option>
                     </select>
                   </div>
                 </div>
+
                 <div class="col-lg-6 col-md-6">
                   <label for="">Select fromDate and toDate</label>
                   <br>
@@ -96,45 +86,51 @@
                       <input type="text" class="form-control" placeholder="To Date" ng-model="toDate" date="dd-MM-yy"> </datepicker>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
-                <div class="col-lg-6 col-md-6">
-                  <div class="form-group">
-                    <button style="margin-top:10px;" class="btn btn-lg btn-success" type="reset" ng-click="clearAll()">Submit</button>
+
+                <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
+                  <div class="col-sm-8 offset-sm-6" style="margin-top : 40px">
+                    <div class="form-group">
+                      <button style="margin-top:10px;" class="btn btn-lg btn-success" type="reset" ng-click="clearAll()">Submit</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </form>
           </div>
         </div>
-      </div>
-      <table class="table table-hover table-bordered mt-3">
-        <thead>
-          <tr>
-            <th>S.No</th>
-            <th>Adhaar</th>
-            <th>Type of viewer</th>
-            <th>User Registration Date</th>
-            <th>No Of Videos</th>
-            <th>Video Index</th>
-            <th>Watch Duration</th>
-            <th>Effectiveness</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>811102547896</td>
-            <td>Others</td>
-            <td>11/15/2017</td>
-            <td>5</td>
-            <td>2</td>
-            <td>15 Mints</td>
-            <td>Good</td>
-          </tr>
 
-        </tbody>
-      </table>
+        </form>
+      </div>
     </div>
   </div>
+  <table class="table table-hover table-bordered mt-3">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Adhaar</th>
+        <th>Type of viewer</th>
+        <th>User Registration Date</th>
+        <th>No Of Videos</th>
+        <th>Video Index</th>
+        <th>Watch Duration</th>
+        <th>Effectiveness</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>811102547896</td>
+        <td>Others</td>
+        <td>11/15/2017</td>
+        <td>5</td>
+        <td>2</td>
+        <td>15 Mints</td>
+        <td>Good</td>
+      </tr>
+
+    </tbody>
+  </table>
 </div>
+
+
+

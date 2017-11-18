@@ -8,10 +8,17 @@
  * Controller of the healthApplicationApp
  */
 angular.module('healthApplicationApp')
-  .controller('homeCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('homeCtrl', function ($scope) {
+    $scope.dashboard = [{
+      "HoursLearning": "10",
+      "PeopleEducated": "20",
+      "VillagesImpact": "40",
+      "ssTrained": "10",
+      "PR": "40",
+      "viewerReg": "1",
+      "Preg": "5",
+      "women": "5"
+
+    }];
+    console.log($scope.dashboard)
   });

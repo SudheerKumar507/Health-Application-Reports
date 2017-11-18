@@ -135,17 +135,17 @@
                             <div class="col-md-4">
                                 <form>
                                     <div class="form-group">
-                                        <label for="email">Email address:</label>
-                                        <input type="email" class="form-control" id="email">
+                                        <label>username:</label>
+                                        <input class="form-control" ng-model="auth.username">
                                     </div>
                                     <div class="form-group">
                                         <label for="pwd">Password:</label>
-                                        <input type="password" class="form-control" id="pwd">
+                                        <input type="password" class="form-control" ng-model="auth.password">
                                     </div>
 
                                 </form>
 
-                                <button type="button" class="btn btn-success">Login</button>
+                                <button type="button" class="btn btn-success" ng-click="login(auth)">Login</button>
                                 <span class="psw">
                                     <a href="#">Forgot password?</a>
                                 </span>

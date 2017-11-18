@@ -19,6 +19,7 @@ angular
     'ngSanitize',
     'ngTouch',
     '720kb.datepicker'
+  
   ])
   .config(function ($routeProvider) {
     $routeProvider

@@ -31,7 +31,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select District :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="districtID" ng-options="district.districtID as district.name for district in districts | orderBy:'district'" ng-click="getClusters()">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="districtID" ng-options="district.districtID as district.name for district in districts | orderBy:'district'" ng-click="getBlocks()">
                                             <option value="">Select District</option>
                                         </select>
                                     </div>
@@ -40,7 +40,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Block :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="blockName" ng-options="state as state.name for state in states | orderBy:'state'">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="blockID" ng-options="block.blockID as block.name for block in blocks | orderBy:'block'" ng-click="getBlocks()">
                                             <option value="">Select Block</option>
                                         </select>
                                     </div>
@@ -48,7 +48,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Cluster :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusterData | orderBy:'cluster'" ng-click="getVillages()">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="clusterID" ng-options="cluster.clusterID as cluster.name for cluster in clusterData | orderBy:'cluster'" ng-click="getClusters()">
                                             <option value="">Select Cluster</option>
                                         </select>
                                     </div>
@@ -61,7 +61,7 @@
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Village :</label>
-                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageName" ng-options="village as village.name for village in villageData | orderBy:'state'">
+                                        <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="villageID" ng-options="village.villageID as village.name for village in villageData | orderBy:'state'" ng-click="getVillages()">
                                             <option value="">Select Village</option>
                                         </select>
                                     </div>

@@ -241,7 +241,7 @@ body{
  background:#ddd;
  }
 b{ font-weight:600;}
-
+.form-control{width:20%}
 .affix{
  top: 0;width:100%; z-index:9999;
  }
@@ -327,7 +327,8 @@ label{ font-weight:600}
 .brorder-radius-6{border-radius: 5px;-moz-border-radius: 5px;-web-border-radius: 5px;}
 .error-msg{background: #ff0000; padding: 5px; margin-bottom: 5px; color: #fff;border-radius: 10px;-moz-border-radius: 10px;-web-border-radius: 10px;}
 .success-msg{background: #008000; padding: 5px; margin-bottom: 5px; color: #fff;border-radius: 10px;-moz-border-radius: 10px;-web-border-radius: 10px;}
-#header{padding:5px 0; background:#0c465e}
+#header{padding:5px 0; background:#fff}
+#navbar{padding:5px 0; background: #d45b15e8}
 #logo img{width:120px; height:60px;}
 /*#client_logo img{width:120px; height:64px;}*/
 @media screen and (max-width:767px) {
@@ -337,7 +338,7 @@ label{ font-weight:600}
 
 .label,.glyphicon { margin-right:5px; }
 .label,.fa { margin-right:5px; }
-
+#cols{padding-right:31px;padding-left:31px;}
 
 /* #header_bgimg{
  background: url('../../images/bg-header.jpg') no-repeat center center fixed;

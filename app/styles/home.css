@@ -982,7 +982,20 @@ border:4px solid #fff;}
 }
 
 
-/*Chinni css */
+/*Font */
 .panel{
   border-color:#f1f1f1 !important;
+}
+
+.font {
+  font-size: 14px
+}
+
+.reports {
+  border-right-width: 5px;
+  height: 45px;
+  width: 200px;
+}
+.signout{
+  font-size: 14px;
 }

@@ -1,17 +1,12 @@
-<style>
-  .reports {
-    border-right-width: 5px;
-    height: 45px;
-    width: 350px;
-  }
-</style>
-
-
 <div>
   <div ng-include="'views/header.html'"></div>
   <div id="navbar" style="height:40px;background-color:#4e9f8a">
-    <div class="container-fluid main_content">
-    </div>
+      <div class="container-fluid main_content col-sm-12 font">          
+          <a href="#/" class="float-right">
+              <i class="fa fa-sign-out" aria-hidden="true" style = "color:#ffffff"></i>
+              <font color="#ffffff"> Sign Out</font>
+          </a>
+      </div>
   </div>
 
   <div class="container-fluid">
@@ -110,14 +105,14 @@
 
 
         <div class="col-sm-4 mt-3 p-2" style="top: 23px; border:solid #4e9f8a 2px">
-          <div class="col-sm-8 offset-sm-2" style="top: 50px" >
+          <div class="col-sm-8 offset-sm-2" style="top: 50px">
 
             <div class="card-block">
               <button type="button" class="btn-info reports" ng-click="viewerReports()">Viewer Report</button>
             </div>
 
             <div class="card-block">
-              <button type="button" class="btn-warning reports"  ng-click="ssReports()">SS Report</button>
+              <button type="button" class="btn-warning reports" ng-click="ssReports()">SS Report</button>
             </div>
 
             <div class="card-block">

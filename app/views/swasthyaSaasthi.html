@@ -1,9 +1,14 @@
-<div>
+<div class = "font">
     <div ng-include="'views/header.html'"></div>
     <div id="navbar" style="height:40px;background-color:#4e9f8a">
-        <div class="container-fluid main_content">
+            <div class="container-fluid main_content col-sm-12">
+                <font color="#ffffff">Swasthya saasthi Reports</font>
+                <a href="#/" class="float-right">
+                    <i class="fa fa-sign-out" aria-hidden="true" style = "color:#ffffff"></i>
+                    <font color="#ffffff"> Sign Out</font>
+                </a>
+            </div>
         </div>
-    </div>
 
     <div class="container-fluid">
         <!-- <div id="main"> -->
@@ -14,7 +19,7 @@
                 <div class="panel-body">
                     <div class="row">
                         <form name="form">
-                            <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style = "margin-top : 20px">
+                            <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 20px">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select State :</label>
@@ -53,7 +58,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style = "margin-top : 40px">
+                            <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 40px">
                                 <div class="col-lg-3 col-md-3">
                                     <div class="form-group">
                                         <label for="">Select Village :</label>
@@ -88,49 +93,46 @@
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
-                                        <div class="col-sm-8 offset-sm-6" style = "margin-top : 40px">
-                                            <div class="form-group">
-                                                <button style="margin-top:10px;" class="btn btn-lg btn-success" type="reset" ng-click="clearAll()">Submit</button>
-                                            </div>
+                                    <div class="col-sm-8 offset-sm-6" style="margin-top : 40px">
+                                        <div class="form-group">
+                                            <button style="margin-top:10px;" class="btn btn-lg btn-success" type="reset" ng-click="clearAll()">Submit</button>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                
+
                 </form>
             </div>
         </div>
     </div>
     <table class="table table-hover table-bordered mt-3">
         <thead>
-          <tr>
-            <th>S.No</th>
-            <th>Adhaar</th>
-            <th>Type of viewer</th>
-            <th>User Registration Date</th>
-            <th>No Of Videos</th>
-            <th>Video Index</th>
-            <th>Watch Duration</th>
-            <th>Effectiveness</th>
-          </tr>
+            <tr>
+                <th>S.No</th>
+                <th>Adhaar</th>
+                <th>Type of viewer</th>
+                <th>User Registration Date</th>
+                <th>No Of Videos</th>
+                <th>Video Index</th>
+                <th>Watch Duration</th>
+                <th>Effectiveness</th>
+            </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>811102547896</td>
-            <td>Others</td>
-            <td>11/15/2017</td>
-            <td>5</td>
-            <td>2</td>
-            <td>15 Mints</td>
-            <td>Good</td>
-          </tr>
+            <tr>
+                <td>1</td>
+                <td>811102547896</td>
+                <td>Others</td>
+                <td>11/15/2017</td>
+                <td>5</td>
+                <td>2</td>
+                <td>15 Mints</td>
+                <td>Good</td>
+            </tr>
 
         </tbody>
-      </table>      
+    </table>
 </div>
-
-
-

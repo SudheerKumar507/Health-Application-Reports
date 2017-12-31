@@ -1,3 +1,12 @@
+.icon-user:before {
+  content: "\e005";
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
 .navbar{
   width: 1359px;
   height: 75px;

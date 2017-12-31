@@ -15,106 +15,106 @@
 
     <div>
       <div class="panel panel-primary">
-
-       
-
-        
         <div class="panel-body">
           <div class="row">
-              <form name="form">
-                  <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 20px">
-                      <div class="col-lg-3 col-md-3">
-                          <div class="form-group">
-                              <label for="">Select State :</label>
-                              <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="states.state" ng-options="states.id as states.name for states in statesData | orderBy:'state'"
-                                  ng-click="getDistricts()">
-                                  <option value="">Select State</option>
-                              </select>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3">
-                          <div class="form-group">
-                              <label for="">Select District :</label>
-                              <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="district.district" ng-options="district.id as district.name for district in districts | orderBy:'district'"
-                                  ng-click="getBlocks()">
-                                  <option value="">Select District</option>
-                              </select>
-                          </div>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3">
-                          <div class="form-group">
-                              <label for="">Select Block :</label>
-                              <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="block.mandal" ng-options="block.id as block.name for block in blocks | orderBy:'block'"
-                                  ng-click="getClusters()">
-                                  <option value="">Select Block</option>
-                              </select>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3">
-                          <div class="form-group">
-                              <label for="">Select Cluster :</label>
-                              <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="cluster.cluster" ng-options="cluster.id as cluster.name for cluster in clusters | orderBy:'cluster'"
-                                  ng-click="getVillages() ">
-                                  <option value="">Select Cluster</option>
-                              </select>
-                          </div>
-                      </div>
+            <form name="form">
+              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 20px">
+                <div class="col-lg-3 col-md-3">
+                  <div class="form-group">
+                    <label for="">Select State :</label>
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="states.state" ng-options="states.id as states.name for states in statesData | orderBy:'state'"
+                      ng-click="getDistricts()">
+                      <option value="">Select State</option>
+                    </select>
                   </div>
-                  <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 40px">
-                      <div class="col-lg-3 col-md-3">
-                          <div class="form-group">
-                              <label for="">Select Village :</label>
-                              <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="village.village" ng-options="village.id as village.name for village in villages | orderBy:'village'"
-                                  ng-click="getswasthyaSaathi()">
-                                  <option value="">Select Village</option>
-                              </select>
-                          </div>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3">
-                          <div class="form-group">
-                              <label for="">Select Swaasthya Saathi :</label>
-                              <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="id" ng-options="swasthy.id as swasthy.name for swasthy in swasthyaData | orderBy:'swasthy'">
-                                  <option value="">Select Swaasthya Saathi</option>
-                              </select>
-                          </div>
-                      </div>
-
-                      <div class="col-lg-6 col-md-6">
-                          <label for="">Select fromDate and toDate</label>
-                          <br>
-                          <div class="col-lg-6 col-md-6">
-                              <datepicker date-format="dd-MM-yy">
-                                  <input type="text" class="form-control" placeholder="From Date" ng-model="fromDate" date="dd-MM-yy"> </datepicker>
-                          </div>
-                          <div class="col-lg-6 col-md-6">
-                              <datepicker date-format="dd-MM-yy">
-                                  <input type="text" class="form-control" placeholder="To Date" ng-model="toDate" date="dd-MM-yy"> </datepicker>
-                          </div>
-                      </div>
-
-                      <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
-                          <div class="col-sm-8 offset-sm-6" style="margin-top : 40px">
-                              <div class="form-group">
-                                  <button style="margin-top:10px;" class="btn btn-lg btn-success" type="reset" ng-click="getsessionReports(id)">Submit</button>
-                              </div>
-                          </div>
-                      </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="form-group">
+                    <label for="">Select District :</label>
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="district.district" ng-options="district.id as district.name for district in districts | orderBy:'district'"
+                      ng-click="getBlocks()">
+                      <option value="">Select District</option>
+                    </select>
                   </div>
-              </form>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                  <div class="form-group">
+                    <label for="">Select Block :</label>
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="block.mandal" ng-options="block.id as block.name for block in blocks | orderBy:'block'"
+                      ng-click="getClusters()">
+                      <option value="">Select Block</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                  <div class="form-group">
+                    <label for="">Select Cluster :</label>
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="cluster.cluster" ng-options="cluster.id as cluster.name for cluster in clusters | orderBy:'cluster'"
+                      ng-click="getVillages() ">
+                      <option value="">Select Cluster</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0" style="margin-top : 40px">
+                <div class="col-lg-3 col-md-3">
+                  <div class="form-group">
+                    <label for="">Select Village :</label>
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="village.village" ng-options="village.id as village.name for village in villages | orderBy:'village'"
+                      ng-click="getswasthyaSaathi()">
+                      <option value="">Select Village</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                  <div class="form-group">
+                    <label for="">Select Swaasthya Saathi :</label>
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="id" ng-options="swasthy.id as swasthy.name for swasthy in swasthyaData | orderBy:'swasthy'">
+                      <option value="">Select Swaasthya Saathi</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <label for="">Select fromDate and toDate</label>
+                  <br>
+                  <div class="col-lg-6 col-md-6">
+                    <datepicker date-format="dd-MM-yy">
+                      <input type="text" class="form-control" placeholder="From Date" ng-model="fromDate" date="dd-MM-yy"> </datepicker>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <datepicker date-format="dd-MM-yy">
+                      <input type="text" class="form-control" placeholder="To Date" ng-model="toDate" date="dd-MM-yy"> </datepicker>
+                  </div>
+                </div>
+
+                <div class="col-lg-12 col-md-12 margin-bottom-15 p-l-r-0">
+                  <div class="col-sm-8 offset-sm-6" style="margin-top : 40px">
+                    <div class="form-group">
+                      <button style="margin-top:10px;" class="btn btn-lg btn-success" type="reset" ng-click="getsessionReports(id)">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
-      </div>
+        </div>
 
         </form>
       </div>
     </div>
   </div>
+
+</div>
+
+<div>
+
   <table class="table table-hover table-bordered mt-3">
     <thead>
       <tr>
-        <th>S.No</th>
-        <!-- <th>Session ID</th> -->
+        <th>S.No</th>        
         <th>Adhaar</th>
         <th>Type of viewer</th>
         <th>Date</th>
@@ -124,20 +124,17 @@
         <th>Effectiveness</th>
       </tr>
     </thead>
-    <tbody  ng-repeat="data in sessionData">
-      <tr>
-        <!-- <td>{{data.SRNO}}</td> -->
-        <!-- <td>{{data.sessionID}}</td> -->
+    <tbody ng-repeat="data in sessionData">
+      <tr>        
         <td>{{$index + 1}}</td>
         <td>{{data.aadhar}}</td>
         <td>{{data.type}}</td>
         <td>{{data.date}}</td>
         <td>{{data.startTime}}</td>
-        <td>{{data.duration}}</td>        
+        <td>{{data.duration}}</td>
         <td>{{data.videos}}</td>
         <td>{{data.effectiveness}}</td>
       </tr>
-
     </tbody>
   </table>
 </div>

@@ -11,11 +11,12 @@ angular.module('healthApplicationApp')
 
   .controller('sessionCtrl', ['$rootScope', '$scope', '$http', function ($rootScope, $scope, $http) {
 
-    var baseURL = 'http://192.168.1.18:9999';
+    var baseURL = 'http://13.126.239.21:3042';
 
     // Get states
 
     var getStates = function () {
+      
       $http.get(baseURL + '/index/getState').then(function (response) {       
         $scope.statesData = response.data.data;
       }, function (err) {

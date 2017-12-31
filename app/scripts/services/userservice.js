@@ -10,7 +10,7 @@
 angular.module('healthApplicationApp')
   .service('Sample', function Sample($http, $q) {
 
-    var baseURL = 'http://13.126.239.21:3042';
+    var baseURL = 'http://13.126.239.21:3042/index';
    
     var deferred = $q.defer();
     return {

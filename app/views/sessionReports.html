@@ -22,8 +22,8 @@
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select State :</label>
-                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="states.state" ng-options="states.id as states.name for states in statesData | orderBy:'state'"
-                      ng-click="getDistricts()">
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="states.id" ng-options="states.id as states.name for states in statesData | orderBy:'state'"
+                      ng-click="getDistricts(states.id)">{{statesData.name}}
                       <option value="">Select State</option>
                     </select>
                   </div>
@@ -31,8 +31,8 @@
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select District :</label>
-                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="district.district" ng-options="district.id as district.name for district in districts | orderBy:'district'"
-                      ng-click="getBlocks()">
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="district.id" ng-options="district.id as district.name for district in districts | orderBy:'district'"
+                      ng-click="getBlocks(district.id)">
                       <option value="">Select District</option>
                     </select>
                   </div>
@@ -41,8 +41,8 @@
                 <div class="col-lg-3 col-md-3">
                   <div class="form-group">
                     <label for="">Select Block :</label>
-                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="block.mandal" ng-options="block.id as block.name for block in blocks | orderBy:'block'"
-                      ng-click="getClusters()">
+                    <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="block.id" ng-options="block.id as block.name for block in blocks | orderBy:'block'"
+                      ng-click="getClusters(block.id)">
                       <option value="">Select Block</option>
                     </select>
                   </div>
